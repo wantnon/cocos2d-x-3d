@@ -22,7 +22,7 @@ public:
         r=r_value;
         A=0;
         B=0;
-        kmVec4Fill(&eyePos, 0, sqrt(2)*r_value, sqrt(2)*r_value, 1);
+        kmVec4Fill(&eyePos, 0, sqrtf(2)*r_value, sqrtf(2)*r_value, 1);
         kmVec4Fill(&eyeTg, 0, 0, 0, 1);
         
         mosx=mosxf=0;
