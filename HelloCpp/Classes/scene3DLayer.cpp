@@ -31,6 +31,7 @@ bool Cscene3DLayer::init(){
 void Cscene3DLayer::visit(){
     //set projection
     CCDirector::sharedDirector()->setProjection(kCCDirectorProjection3D);
+    //because in CCDirector::setProjection, the modelview matrix is modified, so here we reset it
     kmGLMatrixMode(KM_GL_MODELVIEW);
     kmGLLoadIdentity();
     //enable depth test
